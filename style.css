@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    background: linear-gradient(to right, #C8DAFD, #9FDFE6);
+
+}
+#controls {
+    margin: 20px;
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+}
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.note {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFD700;
+}
+.note button {
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.edit-btn { background: blue; left: 5px; }
+.delete-btn { background: red; right: 5px; }
+#newPageBtn { background: linear-gradient(to right, #ff00cc, #663399); }
+#clearAllBtn { background: linear-gradient(to right, #7B81BF, #F88AB1); }
+#a4ModeBtn { background: linear-gradient(to right, #FFCC8D, #FFF6E7); }
+
+/* A4 Page Mode Styling */
+#a4-container {
+    display: none;
+    width: 210mm;
+    height: 297mm;
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: left;
+    font-size: 18px;
+    border-radius: 20px;
+    line-height: 1.5;
+}
+#a4-textarea {
+    width: 100%;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    resize: none;
+    background: linear-gradient(to right, #ff7eb3, #75ffda, #d67eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.pagal_hai_tu{
+    color: #080520;
+    font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.list_sunlebhai{
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+@media (max-width: 991px) {
+    #a4-container {
+        width: 80%;
+    }
+}

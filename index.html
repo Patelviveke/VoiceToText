@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voice Sticky Notes & A4 Page.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="pagal_hai_tu">🎤 Voice Sticky Notes & A4 Assignment Mode</h1>
+    <div id="controls">
+        <button class="list_sunlebhai" onclick="startListening()">🎙 Start Listening</button>
+        <button id="newPageBtn" onclick="addNewPage()">➕ New Page</button>
+        <button id="clearAllBtn" onclick="clearAll()">🗑 Clear All</button>
+        <button id="a4ModeBtn" onclick="toggleA4Mode()">📄 A4 Page Mode</button>
+    </div>
+
+    <div id="notes-container"></div>
+    <div id="a4-container">
+        <textarea id="a4-textarea" placeholder="Start writing your assignment here..."></textarea>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
